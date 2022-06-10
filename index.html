@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Softeq JS tasks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+              integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<!--    <link rel="stylesheet" href="styles.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Ruthie&family=Sacramento&family=Satisfy&display=swap"
+              rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a83ed8b330.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="p-3 mt-3 text-center text-white bg-primary bg-opacity-75 rounded">
+            <h1>Softeq JS task</h1>
+            <h4>by Vilija Mažeikė</h4>
+        </div>
+
+        <div class='task task1'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 1</div>
+            <p>Apply CSS styles (red color and black background) to the third paragraph of the following HTML
+                template:
+            </p>
+            <code>
+                <div>&lt;div class=”container”&gt;</div>
+                <div class='ms-3'>&lt;p&gt;First&lt;/p&gt;</div>
+                <div class='ms-3'>&lt;p&gt;Second&lt;/p&gt;</div>
+                <div class='ms-3'>&lt;p&gt;Third&lt;/p&gt;</div>
+                <div>&lt;/div&gt;</div>
+            </code>
+            <button class="my-3 btn btn-outline-primary changeStyle">Change style</button>
+            <h3>Result</h3>
+            <div class="container">
+                <p class="my-0">First</p>
+                <p class="my-0">Second</p>
+                <p>Third</p>
+            </div>
+        </div>
+        <hr>
+        <div class='task task2'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 2</div>
+            <p>Write a program that outputs sequentially the integers from 1 to 99 but on some conditions
+                prints a string instead:
+            <ul>
+                <li>when the integer is a multiple of 3 print “Open” instead of the number</li>
+                <li>when it is a multiple of 7 print “Source” instead of the number,</li>
+                <li>when it is a multiple of both 3 and 7 print “OpenSource” instead of the number.</li>
+            </ul>
+            </p>
+            <button class="my-3 btn btn-outline-primary integerPrint">Print output</button>
+            <h3>Result</h3>
+            <div class="parentStyle d-flex flex-wrap"></div>
+        </div>
+        <hr>
+        <div class='task task3'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 3</div>
+            <p>Find all children of the container HTML element in the following template using native
+                JavaScript functionality:
+            </p>
+            <code>
+                <div>&lt;div class=”container”&gt;</div>
+                <div class='ms-3'>&lt;div&gt;A&lt;/div&gt;</div>
+                <div class='ms-3'>&lt;div&gt;B&lt;/div&gt;</div>
+                <div class='ms-3'>&lt;div&gt;C&lt;/div&gt;</div>
+                <div>&lt;/div&gt;</div>
+            </code>
+
+            <div class="container">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+            </div>
+
+            <button class="my-3 btn btn-outline-primary findChildren">Find children</button>
+
+            <h3>Result</h3>
+            <div class="printChildren"></div>
+        </div>
+        <hr>
+        <div class='task task4'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 4</div>
+            <p>Write a function that takes a list of strings and returns the sum of the list items that represent an
+                integer (skipping the other items).
+            </p>
+            <div>
+                <p class="my-0">Example</p>
+                <p class="my-0 ms-3">Input: ['1', 'a', '25', '13.1']</p>
+                <p class="my-0 ms-3">Output: 26</p>
+            </div>
+            <button class="my-3 btn btn-outline-primary sumIntegers">Change style</button>
+
+            <h3>Result</h3>
+            <div class="sumResult"></div>
+        </div>
+        <hr>
+        <div class='task task5'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 5</div>
+            <p>Write a function that gets JSON from the following link
+                (https://jsonplaceholder.typicode.com/posts) and returns an object with id = 5.
+            </p>
+            <div class="d-flex align-items-center">
+                <input type="number" class="form-control w-25 me-1" min="1" max="100" value="5">
+                <button class="my-3 btn btn-outline-primary fetchData">Fetch by id</button>
+            </div>
+
+
+            <h3>Result</h3>
+            <div class="objectReceived"></div>
+        </div>
+        <hr>
+        <div class='task task6'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 6</div>
+            <p>Write a regular expression to match strings containing both "Softeq" and "#rules" in any order.
+            </p>
+            <div class="regexText p-2 border text-info">This is a useful text about Softeq and it's #rules.</div>
+            <div class="mt-3">
+                <label for="regexNewText">Add your own text to check regex:</label>
+                <textarea name="regexTextInput" id="regexNewText" cols="90" rows="3"></textarea>
+            </div>
+            <button class="my-3 btn btn-outline-primary regexCheck">Check regex status</button>
+            <h3>Result</h3>
+            <div class="regexResult"></div>
+        </div>
+        <hr>
+        <div class='task task7'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 7</div>
+            <p>Write a function that, when called, returns an array for which each element is a letter of the
+                alphabet, from "A" to "Z" (exactly once, in order and upper case). Your code cannot contain the
+                character ' (quote), " (double quote) or ` (backquote).
+            </p>
+            <button class="my-3 btn btn-outline-primary generateAlphabet">Get alphabet</button>
+
+            <h3>Result</h3>
+            <div class="alphabetArray"></div>
+        </div>
+        <hr>
+        <div class='task task8'>
+            <div class="p-2 my-2 bg-primary bg-opacity-10 rounded fs-4">Test 8</div>
+            <p>Solve the game "Guess a number", find a secret integer between 1 and 1000000 in less than 50
+                guesses. Write a function that solves the game and returns the solution by using the function
+                verify() which is defined with the following specification:
+            </p>
+            <code>
+                function verify(guess: integer) -> integer
+            </code>
+            <ul class="mt-3">Returns:
+                <li>0 if the guess is the solution, your program won,</li>
+                <li>-1 if the solution is smaller than the guessing parameter,</li>
+                <li>1 if the solution is bigger than the guessing parameter</li>
+            </ul>
+            <p>Warning: You are not allowed to call verify() more than 50 times or you lose</p>
+            <div class="triesLeft fw-bold">You have 50 tries</div>
+            <div class="gameOver"></div>
+            <div class="d-flex align-items-center">
+                <input type="number" class="form-control w-25 me-1" min="1" max="1000000">
+                <button class="my-3 btn btn-outline-primary startGame">Play game</button>
+            </div>
+            <h3>Result</h3>
+            <div>
+                <div class="triesResult"></div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
